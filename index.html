@@ -47,13 +47,13 @@
                     </li>
                 </ul>
                 <ul class="header__navbar-list">
-                    <li class="header__navbar-item">
+                    <li class="header__navbar-item header__navbar-item--has-notify">
                         <a href="" class="header__navbar-item-link">
                             <i class="fa-solid fa-bell"></i>
                             Thông báo
                             <div class="header__notify">
                                 <header class="header__notify-header">
-                                    <h3 class="">Thông báo mới nhận</h3>
+                                    <h3 class="">Thông báo mới nhận</h3>    
                                 </header>
                                 <ul class="header__notify-list">
                                     <li class="header__notify-item header__notify-item--viewed">
@@ -120,6 +120,60 @@
                 
         </footer>
     </div>
+    <!-- modal layout -->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            <div class="modal__inner">
+                <!-- Authen form -->
+                <div class="auth-form">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form_switch-btn">Đăng nhập</span>
+                    </div>
+                    
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__policy-text">
+                            Bằng việc đăng ký, bạn đã đồng ý với shopee về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> & 
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </div>
+
+                        <div class="auth-form__controls">
+                            <button class="btn">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+
+                        <div class="auth-form__socials">
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fa-brands fa-facebook-square"></i>
+                                Kết nối với Facebook
+                            </a>
+                            <a href="" class="btn btn--with-icon">
+                                <i class="fa-brands fa-google"></i>
+                                Kết nối với Google
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
